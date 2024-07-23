@@ -1,0 +1,26 @@
+{
+  "name": "graphql-server",
+  "version": "1.0.0",
+  "description": "A GraphQL server deployed on AWS Lambda using TypeScript and Node.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "deploy": "serverless deploy",
+    "dev": "ts-node-dev src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1661.0",
+    "graphql": "^15.9.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.141",
+    "@types/node": "^20.14.11",
+    "serverless": "^4.1.15",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.4"
+  }
+}

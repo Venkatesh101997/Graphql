@@ -1,0 +1,73 @@
+{
+  "V:\\stuff\\DevOps_task\\graphql-server\\my-service": {
+    "versionSfCore": null,
+    "versionFramework": "4.1.16",
+    "isWithinCompose": false,
+    "isCompose": false,
+    "composeOrgName": null,
+    "composeResolverProviders": {},
+    "composeServiceName": null,
+    "servicePath": "V:\\stuff\\DevOps_task\\graphql-server\\my-service",
+    "serviceConfigFileName": "serverless.yml",
+    "service": {
+      "service": "graphql-service",
+      "frameworkVersion": "2",
+      "provider": {
+        "name": "aws",
+        "runtime": "nodejs20.x",
+        "region": "us-east-1",
+        "stage": "dev"
+      },
+      "functions": {
+        "graphql": {
+          "handler": "dist/index.handler",
+          "events": [
+            {
+              "http": {
+                "path": "graphql",
+                "method": "post"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "serviceRawFile": "service: graphql-service\r\n\r\nframeworkVersion: '2'\r\n\r\nprovider:\r\n  name: aws\r\n  runtime: nodejs20.x\r\n  region: us-east-1\r\n\r\nfunctions:\r\n  graphql:\r\n    handler: dist/index.handler\r\n    events:\r\n      - http:\r\n          path: graphql\r\n          method: post\r\n",
+    "command": [
+      "deploy"
+    ],
+    "options": {},
+    "error": {
+      "message": "The Serverless version (4.1.16) does not satisfy the \"frameworkVersion\" (2) in serverless.yml",
+      "stack": "ServerlessError2: The Serverless version (4.1.16) does not satisfy the \"frameworkVersion\" (2) in serverless.yml\n    at Service.loadServiceFileParam (file:///C:/Users/venka/.serverless/releases/4.1.16/package/dist/sf-core.js:855:9321)\n    at Service.load (file:///C:/Users/venka/.serverless/releases/4.1.16/package/dist/sf-core.js:855:6963)\n    at Serverless.init (file:///C:/Users/venka/.serverless/releases/4.1.16/package/dist/sf-core.js:861:9726)\n    at runFramework (file:///C:/Users/venka/.serverless/releases/4.1.16/package/dist/sf-core.js:909:897)\n    at async route (file:///C:/Users/venka/.serverless/releases/4.1.16/package/dist/sf-core.js:920:16046)\n    at async Object.run2 [as run] (file:///C:/Users/venka/.serverless/releases/4.1.16/package/dist/sf-core.js:920:16444)\n    at async run3 (file:///C:/Users/venka/.serverless/releases/4.1.16/package/dist/sf-core.js:920:17704)",
+      "code": "FRAMEWORK_VERSION_MISMATCH"
+    },
+    "params": {},
+    "machineId": "5394445b7df07a47f0313c7634d07494",
+    "accessKeyV2": "<REDACTED>",
+    "accessKeyV1": "<REDACTED>",
+    "orgId": "fe4c2d3e-423d-46e4-be64-9201c528e2d2",
+    "orgName": "zohopvtltd",
+    "userId": "qV0gJZCxPZx4NHFGlr",
+    "dashboard": {
+      "isEnabledForService": false,
+      "requiredAuthentication": true,
+      "orgFeaturesInUse": null,
+      "orgObservabilityIntegrations": null,
+      "serviceAppId": null,
+      "serviceProvider": null,
+      "instanceParameters": null
+    },
+    "userName": "zohopvtltd",
+    "subscription": null,
+    "userEmail": "venkateshgunasekaran10@gmail.com",
+    "serviceProviderAwsCredentials": "<REDACTED>",
+    "serviceProviderAwsAccountId": "058264254082",
+    "versionSf": "4.1.16",
+    "serviceProviderAwsCfStackId": null,
+    "serviceProviderAwsCfStackCreated": null,
+    "serviceProviderAwsCfStackUpdated": null,
+    "serviceProviderAwsCfStackStatus": null,
+    "serviceProviderAwsCfStackOutputs": null
+  }
+}
